@@ -1,16 +1,18 @@
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 
 const SEO = ({
-  title = 'Five Clover Hotel Ilupeju | Luxury Accommodation in Lagos',
-  description = 'Experience luxury and comfort at Five Clover Hotel Ilupeju. Book your stay at our premium hotel in the heart of Lagos, Nigeria.',
-  keywords = 'hotel, lagos, accommodation, five clover, ilupeju, luxury hotel, nigeria, business hotel, vacation',
-  image = '/five clover logo.webp',
-  url = typeof window !== 'undefined' ? window.location.href : 'https://fivecloverilupeju.fivecloverhotels.com',
-  type = 'website',
+  title = "Ring Ruby Hotel Sangotedo | Luxury Accommodation in Lagos",
+  description = "Experience luxury and comfort at Ring Ruby Hotel Sangotedo. Book your stay at our premium hotel at United Estate, Sangotedo, Lagos.",
+  keywords = "hotel, lagos, accommodation, ring ruby, sangotedo, united estate, luxury hotel, nigeria, business hotel, vacation",
+  image = "/ring-ruby-logo.webp",
+  url = typeof window !== "undefined"
+    ? window.location.href
+    : "https://ringrubysangotedo.fivecloverhotels.com",
+  type = "website",
 }) => {
-  const siteName = 'Five Clover Hotel Ilupeju';
-  const siteUrl = 'https://fivecloverilupeju.fivecloverhotels.com';
-  const twitterHandle = '@fivecloverhotel';
+  const siteName = "Ring Ruby Hotel Sangotedo";
+  const siteUrl = "https://ringrubysangotedo.fivecloverhotels.com";
+  const twitterHandle = "@fivecloverhotel";
 
   return (
     <Helmet>

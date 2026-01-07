@@ -1,4 +1,4 @@
-# Five Clover Hotel Ilupeju - robots.txt
+# Ring Ruby Hotel Sangotedo - robots.txt
 User-agent: *
 Allow: /
 Disallow: /admin/
@@ -6,7 +6,7 @@ Disallow: /api/
 Disallow: /*?*
 
 # Sitemap location
-Sitemap: https://fivecloverilupeju.fivecloverhotels.com/sitemap.xml
+Sitemap: https://ringrubysangotedo.fivecloverhotels.com/sitemap.xml
 
 Crawl-delay: 10
 

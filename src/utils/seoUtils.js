@@ -2,11 +2,11 @@ export const generateHotelSchema = (hotelData = {}) => {
   const defaultData = {
     "@context": "https://schema.org",
     "@type": "Hotel",
-    name: "Ring Ruby Hotel Value County",
+    name: "Ring Ruby Hotel Sangotedo",
     description:
-      "Luxury hotel accommodation in Lekki, Lagos. Experience comfort and excellent service at Ring Ruby Hotel Lekki.",
-    url: "https://ringrubyvaluecounty.fivecloverhotels.com",
-    logo: "https://ringrubyvaluecounty.fivecloverhotels.com/ring%20ruby%20logo.webp",
+      "Luxury hotel accommodation at United Estate, Sangotedo, Lagos. Experience comfort and excellent service at Ring Ruby Hotel Sangotedo.",
+    url: "https://ringrubysangotedo.fivecloverhotels.com",
+    logo: "https://ringrubysangotedo.fivecloverhotels.com/ring%20ruby%20logo.webp",
     priceRange: "$$",
     starRating: {
       "@type": "Rating",
@@ -15,18 +15,18 @@ export const generateHotelSchema = (hotelData = {}) => {
     },
     address: {
       "@type": "PostalAddress",
-      streetAddress: "6, Mary Ilusemiti Street, Ogidan., Lekki",
+      streetAddress: "21, Mopo Road, United Estate, Sangotedo",
       addressLocality: "Lagos",
       postalCode: "100001",
       addressCountry: "NG",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: "6.41222",
-      longitude: "4.0947",
+      latitude: "6.467968384380604",
+      longitude: "3.6345845669452395",
     },
-    telephone: "+2349111871249",
-    email: "info@fivecloverhotel.com",
+    telephone: "+2349077168507",
+    email: "info@ringrubyhotelsangotedo.com",
     sameAs: [
       "https://www.facebook.com/RingrubyHotel?_rdc=1&_rdr#",
       "https://www.instagram.com/ringruby_hotel/",
@@ -60,13 +60,13 @@ export const generateBreadcrumbSchema = (items = []) => {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://ringrubyvaluecounty.fivecloverhotels.com",
+      item: "https://ringrubysangotedo.fivecloverhotels.com",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Rooms",
-      item: "https://ringrubyvaluecounty.fivecloverhotels.com/rooms",
+      item: "https://ringrubysangotedo.fivecloverhotels.com/rooms",
     },
   ];
 

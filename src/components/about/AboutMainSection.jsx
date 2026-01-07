@@ -16,13 +16,13 @@ export default function AboutMainSection() {
             Seamless Comfort and Hospitality
           </h1>
           <p className="text-2xl">
-            Five Clover, Ilupeju seamlessly blends modern comfort with the
+            Ring Ruby, Sangotedo seamlessly blends modern comfort with the
             warmth of West African hospitality, offering a unique and inviting
             experience for our esteemed guests. Located in the serene and
-            upscale area of Ilupeju, Lagos, our hotel offers a balanced mix of
-            relaxation, workspaces, and proximity to popular destinations,
-            making it a top choice for travelers seeking comfort and convenience
-            in Ilupeju.
+            upscale United Estate in Sangotedo, Lagos, our hotel offers a
+            balanced mix of relaxation, workspaces, and proximity to popular
+            destinations, making it a top choice for travelers seeking comfort
+            and convenience in Sangotedo.
           </p>
         </div>
         <div data-component="Block2" className="flex flex-col w-full">
@@ -45,12 +45,12 @@ export default function AboutMainSection() {
                 Your Ideal Retreat for Comfort and Convenience
               </h1>
               <p className="text-2xl">
-                Welcome to a new standard of hospitality in Ilupeju. The Five
-                Clover Inn is a modern hotel located in the peaceful Ilupeju
-                area with few minutes' drive from the lekki Epe-Expressway. It
+                Welcome to a new standard of hospitality in Sangotedo. Ring Ruby
+                Hotel is a modern hotel located in the peaceful United Estate
+                area with few minutes' drive from the Novare Lekki Mall. It
                 offers a perfect environment for both business and leisure
                 travelers by combining comfort, functionality, and elegance. The
-                inn features a variety of well-appointed rooms designed for
+                hotel features a variety of well-appointed rooms designed for
                 relaxation, including king-sized beds with luxurious bedding, a
                 coffee station with complimentary packages, air conditioning,
                 free Wi-Fi, flat-screen TVs, and ensuite bathrooms.
@@ -67,7 +67,7 @@ export default function AboutMainSection() {
                 Experience Tranquil Stays with Unmatched Security
               </h1>
               <p className="text-2xl">
-                Five Clover is a modern hotel located in the peaceful Ilupeju
+                Ring Ruby is a modern hotel located in the peaceful Sangotedo
                 area. We ensure a secure environment with advanced surveillance
                 systems and a dedicated team, providing peace of mind throughout
                 your stay. We offer more than just a place to stay; we provide a

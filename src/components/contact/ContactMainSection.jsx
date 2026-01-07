@@ -19,8 +19,8 @@ export default function ContactMainSection() {
       >
         <h1 className="text-6xl font-bold">Get In Touch</h1>
         <p className="text-2xl font-semibold">
-          Have any questions or need assistance? The team at Five Clover,
-          Ilupeju is always ready to ensure your stay is flawless. Don’t
+          Have any questions or need assistance? The team at Ring Ruby,
+          Sangotedo is always ready to ensure your stay is flawless. Don’t
           hesitate to reach out—we’re here to help with anything you need.
         </p>
       </div>
@@ -47,10 +47,10 @@ export default function ContactMainSection() {
           >
             <RiPhoneLine size="3rem" />
             <a
-              href="tel:+2349111871249"
+              href="tel:+2349077168507"
               className="border-b border-[color:var(--text-color)]/30 text-xl"
             >
-              +234 911 187 1249
+              +234 907 716 8507
             </a>
           </div>
           <div
@@ -59,10 +59,10 @@ export default function ContactMainSection() {
           >
             <RiMailLine size="3rem" />
             <a
-              href=""
+              href="mailto:info@ringrubyhotelsangotedo.com"
               className="border-b border-[color:var(--text-color)]/30 text-xl"
             >
-              info@fivecloverhotels.com
+              info@ringrubyhotelsangotedo.com
             </a>
           </div>
           <div

@@ -11,97 +11,77 @@ import beaches from "../../assets/hotel-surroundings/beaches.webp";
 
 const TOP_ATTRACTIONS = [
   {
-    title: "National Stadium Surulere",
-    distance: "12 km",
+    title: "Novare Lekki Mall",
+    distance: "2 km",
   },
   {
-    title: "National Theatre Iganmu",
+    title: "Lufasi Nature Park",
+    distance: "5 km",
+  },
+  {
+    title: "Lakowe Lakes Golf",
+    distance: "10 km",
+  },
+  {
+    title: "Omu Resort",
     distance: "15 km",
   },
   {
-    title: "Tafawa Balewa Square",
-    distance: "18 km",
-  },
-  {
-    title: "Freedom Park Lagos",
-    distance: "20 km",
-  },
-  {
-    title: "Nike Art Gallery",
-    distance: "18 km",
-  },
-  {
-    title: "The Palms Shopping Mall",
-    distance: "8 km",
-  },
-  {
     title: "Lekki Conservation Centre",
-    distance: "25 km",
+    distance: "12 km",
   },
 ];
 
 const SUPERMARKETS = [
   {
-    title: "Spar - Opebi",
-    distance: "3 km",
+    title: "Novare Mall Shoprite",
+    distance: "2 km",
   },
   {
-    title: "Shoprite - The Palms Lekki",
-    distance: "8 km",
-  },
-  {
-    title: "Justrite Supermarket - Ilupeju",
+    title: "Blenco Supermarket",
     distance: "1 km",
   },
   {
-    title: "Ebeano Supermarket - Victoria Island",
-    distance: "15 km",
+    title: "Skymart Shopping Mall",
+    distance: "3 km",
   },
   {
-    title: "Palmgroove Market",
-    distance: "5 km",
+    title: "Ebeano Supermarket",
+    distance: "8 km",
   },
 ];
 
 const TRANSPORTATION = [
   {
-    title: "Murtala Muhammed Airport (LOS)",
-    distance: "12 km",
-  },
-  {
-    title: "Oshodi Transport Interchange",
-    distance: "6 km",
-  },
-  {
-    title: "BRT Bus Stops - Ikorodu Rd",
-    distance: "2 km",
-  },
-  {
-    title: "Ilupeju Bus Terminal",
+    title: "Sangotedo Bus Stop",
     distance: "1 km",
+  },
+  {
+    title: "Ajah Bus Terminal",
+    distance: "5 km",
+  },
+  {
+    title: "Lekki-Epe Expressway",
+    distance: "0.5 km",
   },
 ];
 
 const BEACHES = [
   {
-    title: "Elegushi Private Beach",
-    distance: "15 km",
-  },
-  {
-    title: "Tarkwa Bay Beach",
-    distance: "22 km",
-  },
-  {
-    title: "Lekki Leisure Lake",
-    distance: "25 km",
+    title: "Santa Cruz Beach",
+    distance: "8 km",
   },
   {
     title: "Atican Beach",
-    distance: "28 km",
+    distance: "10 km",
   },
   {
-    title: "Eleko Beach",
-    distance: "32 km",
+    title: "Barracuda Beach",
+    distance: "12 km",
+  },
+  {
+    title: "Redline Beach Resort",
+    distance: "15 km",
   },
 ];
 

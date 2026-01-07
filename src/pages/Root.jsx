@@ -6,7 +6,7 @@ import MainNavBar from "../components/shared/MainNavBar";
 import axios from "axios";
 import { generateHotelSchema } from "../utils/seoUtils";
 import SEO from "../components/seo/SEO";
-import SafeHelmet from '../components/seo/SafeHelmet';
+import SafeHelmet from "../components/seo/SafeHelmet";
 
 const API_BASE_URL = "https://five-clover-shared-backend.onrender.com";
 
@@ -29,7 +29,7 @@ export default function RootLayout() {
   const [roomTypeId, setRoomTypeId] = useState(null);
   const [totalPayment, setTotalPayment] = useState(0);
   const [roomPrices, setRoomPrices] = useState({});
-  const [branchId] = useState(13); // Value County branch ID
+  const [branchId] = useState(7); // Sangotedo branch ID
   const [roomTypes, setRoomTypes] = useState([]);
   const [isLoadingRooms, setIsLoadingRooms] = useState(true);
 
@@ -197,46 +197,46 @@ export default function RootLayout() {
 
   // Get current page metadata
   const getPageMetadata = () => {
-    const baseUrl = "https://fivecloverilupeju.fivecloverhotels.com";
+    const baseUrl = "https://ringrubysangotedo.fivecloverhotels.com";
     const defaultMetadata = {
-      title: "Five Clover Hotel Ilupeju | Luxury Accommodation in Lagos",
+      title: "Ring Ruby Hotel Sangotedo | Luxury Accommodation in Lagos",
       description:
-        "Experience luxury and comfort at Five Clover Hotel Ilupeju. Book your stay at our premium hotel in the heart of Lagos, Nigeria.",
+        "Experience luxury and comfort at Ring Ruby Hotel Sangotedo. Book your stay at our premium hotel at United Estate, Sangotedo, Lagos.",
       url: `${baseUrl}${location.pathname}`,
       type: "website",
-      image: "/five clover logo.webp",
+      image: "/ring-ruby-logo.webp",
     };
 
     const pageMetadata = {
       "/": {
-        title: "Five Clover Hotel Ilupeju | Luxury Accommodation in Lagos",
+        title: "Ring Ruby Hotel Sangotedo | Luxury Accommodation in Lagos",
         description:
-          "Experience luxury and comfort at Five Clover Hotel Ilupeju. Book your stay at our premium hotel in the heart of Lagos, Nigeria.",
+          "Experience luxury and comfort at Ring Ruby Hotel Sangotedo. Book your stay at our premium hotel at United Estate, Sangotedo, Lagos.",
       },
       "/about": {
-        title: "About Us | Five Clover Hotel Ilupeju",
+        title: "About Us | Ring Ruby Hotel Sangotedo",
         description:
-          "Discover the story behind Five Clover Hotel Ilupeju and our commitment to providing exceptional hospitality in Lagos.",
+          "Discover the story behind Ring Ruby Hotel Sangotedo and our commitment to providing exceptional hospitality in Lagos.",
       },
       "/rooms": {
-        title: "Our Rooms | Five Clover Hotel Ilupeju",
+        title: "Our Rooms | Ring Ruby Hotel Sangotedo",
         description:
-          "Explore our luxurious rooms and suites at Five Clover Hotel Ilupeju, designed for your comfort and relaxation.",
+          "Explore our luxurious rooms and suites at Ring Ruby Hotel Sangotedo, designed for your comfort and relaxation.",
       },
       "/gallery": {
-        title: "Photo Gallery | Five Clover Hotel Ilupeju",
+        title: "Photo Gallery | Ring Ruby Hotel Sangotedo",
         description:
-          "View our photo gallery showcasing the luxurious facilities and comfortable accommodations at Five Clover Hotel Ilupeju.",
+          "View our photo gallery showcasing the luxurious facilities and comfortable accommodations at Ring Ruby Hotel Sangotedo.",
       },
       "/contact": {
-        title: "Contact Us | Five Clover Hotel Ilupeju",
+        title: "Contact Us | Ring Ruby Hotel Sangotedo",
         description:
-          "Get in touch with Five Clover Hotel Ilupeju. Our friendly staff is ready to assist with your booking and inquiries.",
+          "Get in touch with Ring Ruby Hotel Sangotedo. Our friendly staff is ready to assist with your booking and inquiries.",
       },
       "/booking": {
-        title: "Book Your Stay | Five Clover Hotel Ilupeju",
+        title: "Book Your Stay | Ring Ruby Hotel Sangotedo",
         description:
-          "Book your luxurious stay at Five Clover Hotel Ilupeju. Best rates guaranteed for our premium accommodations in Lagos.",
+          "Book your luxurious stay at Ring Ruby Hotel Sangotedo. Best rates guaranteed for our premium accommodations in Lagos.",
       },
     };
 
@@ -260,36 +260,36 @@ export default function RootLayout() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Hotel",
-            name: "Five Clover Hotel Ilupeju",
+            name: "Ring Ruby Hotel Sangotedo",
             description:
-              "Experience luxury and comfort at Five Clover Hotel Ilupeju. Book your stay at our premium hotel in the heart of Lagos, Nigeria.",
+              "Experience luxury and comfort at Ring Ruby Hotel Sangotedo. Book your stay at our premium hotel at United Estate, Sangotedo, Lagos.",
             image:
-              "https://fivecloverilupeju.fivecloverhotels.com/five%20clover%20logo.webp",
-            url: "https://fivecloverilupeju.fivecloverhotels.com",
+              "https://ringrubysangotedo.fivecloverhotels.com/ring%20ruby%20logo.webp",
+            url: "https://ringrubysangotedo.fivecloverhotels.com",
             address: {
               "@type": "PostalAddress",
-              streetAddress: "5-9 Ilupeju Bypass",
-              addressLocality: "Ilupeju",
+              streetAddress: "21, Mopo Road, United Estate, Sangotedo",
+              addressLocality: "Sangotedo",
               addressRegion: "Lagos",
-              postalCode: "100211",
+              postalCode: "100001",
               addressCountry: "NG",
             },
             geo: {
               "@type": "GeoCoordinates",
-              latitude: 6.55,
-              longitude: 3.35,
+              latitude: 6.467968384380604,
+              longitude: 3.6345845669452395,
             },
-            priceRange: "₦30,000 - ₦150,000",
+            priceRange: "₦₦",
             starRating: {
               "@type": "Rating",
               ratingValue: "4.5",
               bestRating: "5",
             },
-            telephone: "+234 812 345 6789",
-            email: "info@fivecloverhotel.com",
+            telephone: "+2349077168507",
+            email: "info@ringrubyhotelsangotedo.com",
             sameAs: [
-              "https://www.facebook.com/fivecloverhotel",
-              "https://www.instagram.com/fivecloverhotel",
+              "https://www.facebook.com/RingrubyHotel?_rdc=1&_rdr#",
+              "https://www.instagram.com/ringruby_hotel/",
               "https://twitter.com/fivecloverhotel",
             ],
           })}

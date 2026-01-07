@@ -7,13 +7,14 @@ import { IoRefresh } from "react-icons/io5";
 const API_BASE_URL = "https://five-clover-shared-backend.onrender.com";
 
 const ROOM_TYPE_MAP = {
-  deluxe: 43,
-  executiveSuite: 44,
-  classic: 45,
+  standard: 23,
+  deluxe: 24,
+  executive: 25,
+  royal_suite: 26,
 };
 
 export default function AdminOverviewPage() {
-  const [roomType, setRoomType] = useState("deluxe");
+  const [roomType, setRoomType] = useState("standard");
   const [roomDetails, setRoomDetails] = useState({
     maxCapacity: 0,
     totalAvailableRooms: 0,
@@ -142,6 +143,18 @@ export default function AdminOverviewPage() {
           </div>
         </div>
         <menu className="flex gap-[4rem] text-xl text-[color:var(--emphasis)]">
+          {roomType === "standard" ? (
+            <li className="bg-[color:var(--emphasis)] text-[color:var(--white)] px-2 py-1 cursor-pointer">
+              STANDARD
+            </li>
+          ) : (
+            <li
+              className="border-b-[1px] border-[color:var(--emphasis)] cursor-pointer"
+              onClick={() => setRoomType("standard")}
+            >
+              STANDARD
+            </li>
+          )}
           {roomType === "deluxe" ? (
             <li className="bg-[color:var(--emphasis)] text-[color:var(--white)] px-2 py-1 cursor-pointer">
               DELUXE
@@ -154,28 +167,28 @@ export default function AdminOverviewPage() {
               DELUXE
             </li>
           )}
-          {roomType === "executiveSuite" ? (
+          {roomType === "executive" ? (
             <li className="bg-[color:var(--emphasis)] text-[color:var(--white)] px-2 py-1 cursor-pointer">
-              EXECUTIVE SUITE
+              EXECUTIVE
             </li>
           ) : (
             <li
               className="border-b-[1px] border-[color:var(--emphasis)] cursor-pointer"
-              onClick={() => setRoomType("executiveSuite")}
+              onClick={() => setRoomType("executive")}
             >
-              EXECUTIVE SUITE
+              EXECUTIVE
             </li>
           )}
-          {roomType === "classic" ? (
+          {roomType === "royal_suite" ? (
             <li className="bg-[color:var(--emphasis)] text-[color:var(--white)] px-2 py-1 cursor-pointer">
-              CLASSIC
+              ROYAL SUITE
             </li>
           ) : (
             <li
               className="border-b-[1px] border-[color:var(--emphasis)] cursor-pointer"
-              onClick={() => setRoomType("classic")}
+              onClick={() => setRoomType("royal_suite")}
             >
-              CLASSIC
+              ROYAL SUITE
             </li>
           )}
         </menu>

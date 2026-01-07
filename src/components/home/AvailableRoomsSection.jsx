@@ -41,6 +41,10 @@ import standardRoomImage from "../../assets/room-images/standard/standard.jpg";
 import standardRoomImage2 from "../../assets/room-images/standard/standard-2.jpg";
 import standardRoomImage3 from "../../assets/room-images/standard/standard-3.jpg";
 import standardRoomImage4 from "../../assets/room-images/standard/standard-4.jpg";
+import royalSuiteRoomImage from "../../assets/room-images/royal-suite/royal-suite.jpg";
+import royalSuiteRoomImage2 from "../../assets/room-images/royal-suite/royal-suite-2.jpg";
+import royalSuiteRoomImage3 from "../../assets/room-images/royal-suite/royal-suite-3.jpg";
+import royalSuiteRoomImage4 from "../../assets/room-images/royal-suite/royal-suite-4.jpg";
 
 //deluxe room images
 const deluxeRoomImages = [
@@ -66,11 +70,20 @@ const executiveRoomImages = [
   executiveRoomImage4,
 ];
 
+// royal suite room images
+const royalSuiteRoomImages = [
+  royalSuiteRoomImage,
+  royalSuiteRoomImage2,
+  royalSuiteRoomImage3,
+  royalSuiteRoomImage4,
+];
+
 // Room type to gallery images mapping
 const roomGalleryImages = {
   Deluxe: deluxeRoomImages,
   Executive: executiveRoomImages,
   Standard: standardRoomImages,
+  "Royal Suite": royalSuiteRoomImages,
 };
 
 // Room type to image mapping
@@ -78,6 +91,7 @@ const roomTypeImages = {
   Deluxe: deluxeRoomImage,
   Executive: executiveRoomImage,
   Standard: standardRoomImage,
+  "Royal Suite": royalSuiteRoomImage,
 };
 
 const useSharedContext = () => {
@@ -147,6 +161,7 @@ export default function AvailableRoomsSection() {
     setNumberOfRooms,
     setRoomType,
     updateTotalPayment,
+    branchId,
   } = useSharedContext();
 
   const fetchRoomData = useCallback(async () => {
@@ -156,7 +171,7 @@ export default function AvailableRoomsSection() {
         ? API_BASE_URL.slice(0, -1)
         : API_BASE_URL;
       const response = await axios.post(`${baseUrl}/api/rooms/details`, {
-        branch_id: 13,
+        branch_id: branchId,
       });
 
       console.log("API Response:", response.data);
@@ -179,7 +194,7 @@ export default function AvailableRoomsSection() {
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [branchId]);
 
   useEffect(() => {
     fetchRoomData();
