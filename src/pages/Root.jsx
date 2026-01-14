@@ -7,6 +7,7 @@ import axios from "axios";
 import { generateHotelSchema } from "../utils/seoUtils";
 import SEO from "../components/seo/SEO";
 import SafeHelmet from "../components/seo/SafeHelmet";
+import SchemaMarkup from "../components/shared/SchemaMarkup";
 
 const API_BASE_URL = "https://five-clover-shared-backend.onrender.com";
 
@@ -261,45 +262,8 @@ export default function RootLayout() {
         <meta property="og:url" content={metadata.url} />
         <meta property="og:type" content={metadata.type} />
         <meta property="og:image" content={metadata.image} />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Hotel",
-            name: "Ring Ruby Hotel Sangotedo",
-            description:
-              "Experience luxury and comfort at Ring Ruby Hotel Sangotedo. Book your stay at our premium hotel at United Estate, Sangotedo, Lagos.",
-            image:
-              "https://ringrubysangotedo.fivecloverhotels.com/ring%20ruby%20logo.webp",
-            url: "https://ringrubysangotedo.fivecloverhotels.com",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "21, Mopo Road, United Estate, Sangotedo",
-              addressLocality: "Sangotedo",
-              addressRegion: "Lagos",
-              postalCode: "100001",
-              addressCountry: "NG",
-            },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 6.467968384380604,
-              longitude: 3.6345845669452395,
-            },
-            priceRange: "₦₦",
-            starRating: {
-              "@type": "Rating",
-              ratingValue: "4.5",
-              bestRating: "5",
-            },
-            telephone: "+2349077168507",
-            email: "info@ringrubyhotelsangotedo.com",
-            sameAs: [
-              "https://www.facebook.com/RingrubyHotel?_rdc=1&_rdr#",
-              "https://www.instagram.com/ringruby_hotel/",
-              "https://twitter.com/fivecloverhotel",
-            ],
-          })}
-        </script>
       </SafeHelmet>
+      <SchemaMarkup branchId={branchId} />
       <header>{!isHome && <MainNavBar />}</header>
       <main>
         <Outlet context={contextValue} />
