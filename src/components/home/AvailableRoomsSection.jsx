@@ -95,6 +95,38 @@ const royalSuiteRoomImages = [
   royalSuiteRoomImage4,
 ];
 
+// Mobile deluxe room images
+const mobileDeluxeImages = [
+  mobileDeluxeImage,
+  mobileDeluxeImage2,
+  mobileDeluxeImage3,
+  mobileDeluxeImage4,
+];
+
+// Mobile standard room images
+const mobileStandardImages = [
+  mobileStandardImage,
+  mobileStandardImage2,
+  mobileStandardImage3,
+  mobileStandardImage4,
+];
+
+// Mobile executive room images
+const mobileExecutiveImages = [
+  mobileExecutiveImage,
+  mobileExecutiveImage2,
+  mobileExecutiveImage3,
+  mobileExecutiveImage4,
+];
+
+// Mobile royal suite room images
+const mobileRoyalSuiteImages = [
+  mobileRoyalSuiteImage,
+  mobileRoyalSuiteImage2,
+  mobileRoyalSuiteImage3,
+  mobileRoyalSuiteImage4,
+];
+
 // Room type to gallery images mapping
 const roomGalleryImages = {
   Deluxe: deluxeRoomImages,
@@ -157,7 +189,9 @@ export default function AvailableRoomsSection() {
   const [selectedRooms, setSelectedRooms] = useState({});
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [currentGalleryImages, setCurrentGalleryImages] = useState([]);
-  const [isMobile, setIsMobile] = useState(typeof window !== "undefined" ? window.innerWidth < 640 : false);
+  const [isMobile, setIsMobile] = useState(
+    typeof window !== "undefined" ? window.innerWidth < 640 : false,
+  );
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 640);
