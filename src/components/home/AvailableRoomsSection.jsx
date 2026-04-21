@@ -224,12 +224,8 @@ export default function AvailableRoomsSection() {
     Executive: mobileExecutiveImage,
     "Royal Suite": mobileRoyalSuiteImage,
   };
-  const roomGalleryImages = isMobile
-    ? mobileRoomGalleryImages
-    : desktopRoomGalleryImages;
-  const roomPrimaryImages = isMobile
-    ? mobileRoomTypeImages
-    : desktopRoomTypeImages;
+  const roomGalleryImages = desktopRoomGalleryImages;
+  const roomPrimaryImages = desktopRoomTypeImages;
 
   const handleViewImages = (images) => {
     if (!images || images.length === 0) return;
