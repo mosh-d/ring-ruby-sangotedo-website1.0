@@ -30,7 +30,7 @@ import { TbAirConditioning, TbFridge } from "react-icons/tb";
 
 //Room images
 import deluxeRoomImage from "../../assets/room-images/deluxe/deluxe.jpg";
-import deluxeRoomImage2 from "../../assets/room-images/deluxe/deluxe-2.jpg";
+// import deluxeRoomImage2 from "../../assets/room-images/deluxe/deluxe-2.jpg";
 import deluxeRoomImage3 from "../../assets/room-images/deluxe/deluxe-3.jpg";
 import deluxeRoomImage4 from "../../assets/room-images/deluxe/deluxe-4.jpg";
 import executiveRoomImage from "../../assets/room-images/executive/executive.jpg";
@@ -67,7 +67,7 @@ import mobileRoyalSuiteImage4 from "../../assets/mobile-room-images/royal-suite/
 //deluxe room images
 const deluxeRoomImages = [
   deluxeRoomImage,
-  deluxeRoomImage2,
+  // deluxeRoomImage2,
   deluxeRoomImage3,
   deluxeRoomImage4,
 ];
