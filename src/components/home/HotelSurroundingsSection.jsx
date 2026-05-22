@@ -42,7 +42,7 @@ const SUPERMARKETS = [
     distance: "1 km",
   },
   {
-    title: "Skymart Shopping Mall",
+    title: "Sky Mart Shopping Mall",
     distance: "3 km",
   },
   {
@@ -76,12 +76,12 @@ const BEACHES = [
     distance: "10 km",
   },
   {
-    title: "Barracuda Beach",
-    distance: "12 km",
+    title: "Landmark Beach",
+    distance: "15 km",
   },
   {
-    title: "Redline Beach Resort",
-    distance: "15 km",
+    title: "Elegushi Private Beach",
+    distance: "18 km",
   },
 ];
 
