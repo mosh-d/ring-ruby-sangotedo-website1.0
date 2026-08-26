@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 
 const SEO = ({
   title = "Ringruby Hotel Sangotedo | Luxury Accommodation in Lagos",
-  description = "Experience luxury and comfort at Ringruby Hotel Sangotedo. Book your stay at our premium hotel at United Estate, Sangotedo, Lagos.",
+  description = "Ring Ruby Hotel United Estate offers comfortable, secure accommodation in Sangotedo, minutes from Novare Lekki Mall.",
   keywords = "hotel, lagos, accommodation, ringruby, sangotedo, united estate, luxury hotel, nigeria, business hotel, vacation",
   image = 'https://unitedestate.ringrubyhotel.com/ring-ruby-logo.webp',
   url = typeof window !== "undefined"

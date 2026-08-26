@@ -232,7 +232,7 @@ export default function RootLayout() {
     const defaultMetadata = {
       title: "Ring Ruby Hotel Sangotedo | Luxury Accommodation in Lagos",
       description:
-        "Experience luxury and comfort at Ring Ruby Hotel Sangotedo. Book your stay at our premium hotel at United Estate, Sangotedo, Lagos.",
+        "Ring Ruby Hotel United Estate offers comfortable, secure accommodation in Sangotedo, minutes from Novare Lekki Mall.",
       url: `${baseUrl}${location.pathname}`,
       type: "website",
       image: "/ring-ruby-logo.webp",
@@ -243,7 +243,7 @@ export default function RootLayout() {
       "/": {
         title: "Ring Ruby Hotel Sangotedo | Luxury Accommodation in Lagos",
         description:
-          "Experience luxury and comfort at Ring Ruby Hotel Sangotedo. Book your stay at our premium hotel at United Estate, Sangotedo, Lagos.",
+          "Ring Ruby Hotel United Estate offers comfortable, secure accommodation in Sangotedo, minutes from Novare Lekki Mall.",
       },
       "/about": {
         title: "About Us | Ring Ruby Hotel Sangotedo",
@@ -261,6 +261,17 @@ export default function RootLayout() {
           "Your booking confirmation at Ring Ruby Hotel Sangotedo.",
         robots: "noindex, follow",
       },
+      "/privacy-policy": {
+        title: "Privacy Policy | Ring Ruby Hotel United Estate",
+        description:
+          "Read Ring Ruby Hotel United Estate's privacy policy to learn how we collect, use, and protect your personal information.",
+      },
+      "/terms-of-service": {
+        title: "Terms and Conditions | Ring Ruby Hotel United Estate",
+        description:
+          "Read the terms and conditions that apply to bookings and website use at Ring Ruby Hotel United Estate.",
+      },
+
     };
 
     return { ...defaultMetadata, ...(pageMetadata[location.pathname] || {}) };
