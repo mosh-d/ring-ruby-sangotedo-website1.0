@@ -228,7 +228,7 @@ export default function RootLayout() {
 
   // Get current page metadata
   const getPageMetadata = () => {
-    const baseUrl = "https://ringrubysangotedo.fivecloverhotels.com";
+    const baseUrl = "https://unitedestate.ringrubyhotel.com";
     const defaultMetadata = {
       title: "Ring Ruby Hotel Sangotedo | Luxury Accommodation in Lagos",
       description:
@@ -236,6 +236,7 @@ export default function RootLayout() {
       url: `${baseUrl}${location.pathname}`,
       type: "website",
       image: "/ring-ruby-logo.webp",
+      robots: "index, follow",
     };
 
     const pageMetadata = {
@@ -249,25 +250,16 @@ export default function RootLayout() {
         description:
           "Discover the story behind Ring Ruby Hotel Sangotedo and our commitment to providing exceptional hospitality in Lagos.",
       },
-      "/rooms": {
-        title: "Our Rooms | Ring Ruby Hotel Sangotedo",
-        description:
-          "Explore our luxurious rooms and suites at Ring Ruby Hotel Sangotedo, designed for your comfort and relaxation.",
-      },
-      "/gallery": {
-        title: "Photo Gallery | Ring Ruby Hotel Sangotedo",
-        description:
-          "View our photo gallery showcasing the luxurious facilities and comfortable accommodations at Ring Ruby Hotel Sangotedo.",
-      },
       "/contact": {
         title: "Contact Us | Ring Ruby Hotel Sangotedo",
         description:
           "Get in touch with Ring Ruby Hotel Sangotedo. Our friendly staff is ready to assist with your booking and inquiries.",
       },
-      "/booking": {
-        title: "Book Your Stay | Ring Ruby Hotel Sangotedo",
+      "/booking-confirmation": {
+        title: "Booking Confirmation | Ring Ruby Hotel Sangotedo",
         description:
-          "Book your luxurious stay at Ring Ruby Hotel Sangotedo. Best rates guaranteed for our premium accommodations in Lagos.",
+          "Your booking confirmation at Ring Ruby Hotel Sangotedo.",
+        robots: "noindex, follow",
       },
     };
 
@@ -287,6 +279,8 @@ export default function RootLayout() {
         <meta property="og:url" content={metadata.url} />
         <meta property="og:type" content={metadata.type} />
         <meta property="og:image" content={metadata.image} />
+        <meta name="robots" content={metadata.robots} />
+        <link rel="canonical" href={metadata.url} />
       </SafeHelmet>
       <SchemaMarkup branchId={branchId} />
       <header>{!isHome && <MainNavBar />}</header>

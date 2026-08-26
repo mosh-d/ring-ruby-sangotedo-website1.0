@@ -5,8 +5,8 @@ export const generateHotelSchema = (hotelData = {}) => {
     name: "Ring Ruby Hotel Sangotedo",
     description:
       "Luxury hotel accommodation at United Estate, Sangotedo, Lagos. Experience comfort and excellent service at Ring Ruby Hotel Sangotedo.",
-    url: "https://ringrubysangotedo.fivecloverhotels.com",
-    logo: "https://ringrubysangotedo.fivecloverhotels.com/ring%20ruby%20logo.webp",
+    url: "https://unitedestate.ringrubyhotel.com",
+    logo: "https://unitedestate.ringrubyhotel.com/ring%20ruby%20logo.webp",
     priceRange: "$$",
     starRating: {
       "@type": "Rating",
@@ -60,13 +60,13 @@ export const generateBreadcrumbSchema = (items = []) => {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://ringrubysangotedo.fivecloverhotels.com",
+      item: "https://unitedestate.ringrubyhotel.com",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Rooms",
-      item: "https://ringrubysangotedo.fivecloverhotels.com/rooms",
+      item: "https://unitedestate.ringrubyhotel.com/rooms",
     },
   ];
 
