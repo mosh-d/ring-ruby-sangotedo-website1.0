@@ -12,7 +12,6 @@ const SEO = ({
   noindex = false,
 }) => {
   const siteName = "Ringruby Hotel Sangotedo";
-  const siteUrl = "https://unitedestate.ringrubyhotel.com";
   const twitterHandle = "@fivecloverhotel";
 
   return (
